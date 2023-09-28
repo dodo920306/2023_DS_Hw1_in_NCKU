@@ -4,7 +4,8 @@
 
 #define MAX_INPUT_SIZE 10000
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[])
+{
     int top = -1, size = 0;
     char *input = malloc(MAX_INPUT_SIZE * sizeof(char)), *postfix, **stack;
 

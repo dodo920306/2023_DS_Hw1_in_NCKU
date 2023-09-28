@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[])
+{
     int cases = 0, n = 0, ops = 0;
     if (scanf("%d", &cases) != 1) return 1;
     for (int i = 0; i < cases; i++) {
@@ -61,7 +62,10 @@ int main(int argc, char* argv[]) {
                 printf("%d", arg);
                 if (j + 1 != ops) printf("\n");
             }
+            free(op);
         }
+        free(parent);
+        free(rank);
         if (i + 1 != cases) printf("\n");
     }
     return 0;
