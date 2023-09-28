@@ -22,9 +22,7 @@ The function should be stored in a different file, such as hw1_p1-1.c and hw1_p1
 Write a C function heightUnion that uses the height rule for union operations instead of the weight rule. The following is the definition of this rule.
 
 > Definition [Height Rule]:
-
 > If the height of tree i is less than that of tree j, then make j the parent of i.
-
 > Your function must run in O(1) time and should maintain the height of each tree as a negative number in the parent field of the root.
 
 ### Input Format
