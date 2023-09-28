@@ -22,8 +22,10 @@ The function should be stored in a different file, such as hw1_p1-1.c and hw1_p1
 Write a C function heightUnion that uses the height rule for union operations instead of the weight rule. The following is the definition of this rule.
 
 > Definition [Height Rule]:
-If the height of tree i is less than that of tree j, then make j the parent of i.
-Your function must run in O(1) time and should maintain the height of each tree as a negative number in the parent field of the root.
+
+> If the height of tree i is less than that of tree j, then make j the parent of i.
+
+> Your function must run in O(1) time and should maintain the height of each tree as a negative number in the parent field of the root.
 
 ### Input Format
 The first line is the number of test cases.
@@ -59,6 +61,6 @@ The first line shows V and E. V represents the vertex number while E is the edge
 The output consists of one number, C. It represents the sum of all edge cost in the minimum spanning tree in terms of the given graph.
 
 ### Constraints
-• 1 < V ≤ 10^6
-• V^-1 ≤ E ≤ min(V(V - 1) / 2, 2 * 10^6)
-• 1 < c, s, t < 10^6
+* 1 < V ≤ 10^6
+* V^-1 ≤ E ≤ min(V(V - 1) / 2, 2 * 10^6)
+* 1 < c, s, t < 10^6
