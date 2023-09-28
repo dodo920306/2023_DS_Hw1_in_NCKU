@@ -20,3 +20,5 @@ The function should be stored in a different file, such as hw1_p1-1.c and hw1_p1
 
 ## Problem 2 : Disjoint Sets (2%) 
 Write a C function heightUnion that uses the height rule for union operations instead of the weight rule. The following is the definition of this rule.
+
+
