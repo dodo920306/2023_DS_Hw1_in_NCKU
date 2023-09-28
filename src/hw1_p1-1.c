@@ -28,7 +28,10 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    strcpy(infix, input);
+    /* strncpy() will automatically set the last element '\0'. 
+     * A warning about length bound with src length may occur, but that shouldn't matter.
+     */
+    strncpy(infix, input, size + 1);
     free(input); /* Release the input string with MAX_INPUT_SIZE */
 
     for (int i = 0; i < size; i++) {
@@ -64,7 +67,7 @@ int main(int argc, char* argv[]) {
                  *    the top of the stack should be in the postfix expression first, too.
                  * Hence, the stack won't stop popping until the top of it has a precedence smaller than infix[i].
                  */
-                int a = top >= 0 ? (stack[top] == '*' || stack[top] == '/' ? 2 : (stack[top] == '+' || stack[top] == '-' ? 1 : 0)) : 0;
+                int a = top >= 0 ? (stack[top] == '^' ? 3 :(stack[top] == '*' || stack[top] == '/' ? 2 : (stack[top] == '+' || stack[top] == '-' ? 1 : 0))) : 0;
                 int b = infix[i] == '*' || infix[i] == '/' ? 2 : (infix[i] == '+' || infix[i] == '-' ? 1 : 0);
                 while (!(b > a)) {
                     postfix[j++] = stack[top--];
