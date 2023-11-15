@@ -1,7 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/cbfZMund)
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/meNMMkBH)
+# 2023_DS_Hw1_in_NCKU
+This is a duplication of the original DS Hw1 repo in 2023, NCKU.
 
-# 2023_DS_Fall_Homework 1
+The original one can't be set as public and isn't a repo of mine since it's a github classroom repo. Therefore, here is the public duplication.
 
 ## Execution environment and Constraint.
 * CPU core: 1
