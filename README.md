@@ -62,3 +62,15 @@ The output consists of one number, C. It represents the sum of all edge cost in 
 * 1 < V ≤ 10^6
 * V^-1 ≤ E ≤ min(V(V - 1) / 2, 2 * 10^6)
 * 1 < c, s, t < 10^6
+
+## Get Started
+Please make sure that `git, gcc & make` has been installed successfully.
+
+Run
+
+```bash
+$ make
+```
+to compile the src files.
+
+You can now enter the output directory and check out the outputs.
