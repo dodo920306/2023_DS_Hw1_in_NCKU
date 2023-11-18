@@ -11,7 +11,7 @@ The original one can't be set as public and isn't a repo of mine since it's a gi
     * compiled with -O3 -std=c11 -Wall
 * C Standard: C11
 * Use header file only from C Standard Library
-* OS: Linux 22.04.1 LTS
+* OS: Ubuntu 22.04.1 LTS
 
 ## Problem 1 : Prefix, Infix and Postfix (2%)
 Write two C functions. The first one transforms an infix expression into a postfix one, and the second one transforms a postfix expression into a prefix one. 
