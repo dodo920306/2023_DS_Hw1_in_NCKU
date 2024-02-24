@@ -28,16 +28,10 @@ int main(int argc, char* argv[])
                 int arg1 = 0, arg2 = 0;
                 if (scanf("%d %d", &arg1, &arg2) != 2) return 1;
                 /* find root */
-                while (parent[arg1] != -1) {
-                    arg1 = parent[arg1];
-                }
-                while (parent[arg2] != -1) {
-                    arg2 = parent[arg2];
-                }
+                while (parent[arg1] != -1)    arg1 = parent[arg1];
+                while (parent[arg2] != -1)    arg2 = parent[arg2];
                 if (arg1 != arg2) {
-                    if (rank[arg1] < rank[arg2]) {
-                        parent[arg1] = arg2;
-                    }
+                    if (rank[arg1] < rank[arg2])    parent[arg1] = arg2;
                     else {
                         parent[arg2] = arg1;
                         if (rank[arg1] == rank[arg2])   rank[arg1]++;
@@ -48,12 +42,8 @@ int main(int argc, char* argv[])
                 int arg1 = 0, arg2 = 0;
                 if (scanf("%d %d", &arg1, &arg2) != 2) return 1;
                 /* find root */
-                while (parent[arg1] != -1) {
-                    arg1 = parent[arg1];
-                }
-                while (parent[arg2] != -1) {
-                    arg2 = parent[arg2];
-                }
+                while (parent[arg1] != -1)    arg1 = parent[arg1];
+                while (parent[arg2] != -1)    arg2 = parent[arg2];
 
                 if (arg1 != arg2)   printf("false");
                 else    printf("true");
@@ -63,9 +53,7 @@ int main(int argc, char* argv[])
                 /* find root */
                 int arg = 0;
                 if (scanf("%d", &arg) != 1) return 1;
-                while (parent[arg] != -1) {
-                    arg = parent[arg];
-                }
+                while (parent[arg] != -1)    arg = parent[arg];
 
                 printf("%d", arg);
                 if (j + 1 != ops) printf("\n");
