@@ -8,17 +8,15 @@ int main(int argc, char* argv[])
     if (scanf("%d", &cases) != 1) return 1;
     for (int i = 0; i < cases; i++) {
         if (scanf("%d %d", &n, &ops) != 2) return 1;
-        int *parent = malloc(n * sizeof(int)), *rank = malloc(n * sizeof(int));
+        int *parent = (int *)malloc(n * sizeof(int)), *rank = (int *)calloc(n, sizeof(int));
         if (!parent || !rank) {
             perror("Error");
             return -1;
         }
-        for (int j = 0; j < n; j++) {
-            parent[j] = -1;
-            rank[j] = 0;
-        }
+        for (int j = 0; j < n; parent[j++] = -1);
+
         for (int j = 0; j < ops; j++) {
-            char *op = malloc(6 * sizeof(char));
+            char *op = (char *)malloc(6 * sizeof(char));
             if (!op) {
                 perror("Error");
                 return -1;
